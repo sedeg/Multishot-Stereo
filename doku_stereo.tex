@@ -199,23 +199,29 @@
 	\chapter{Vorbereitung}
 		In dieser Arbeit sollen Stereobilder mit unterschiedlichen Kamerasystemen aufgenommen und verglichen werden. Als Spiegelreflexkamera kommt eine Canon 7D mit den Objektiven \textit{Canon EF 10-22mm F/3.5-4.5 USM} und	\textit{Tamron SP 24-70mm F/2.8 Di VC USD} zum Einsatz. Da für eine Stereoaufnahme immer zwei Fotos, um den durchschnittlichen Augenabstand (6,5 cm) versetzt, erstellt werden müssen, ist ein Stereoschlitten notwendig. Dieser besteht im Wesentlichen aus einer Schiene, auf welcher die Kamera verschoben werden kann. Beim Fotografieren wird darauf geachtet, dass eine hohe Schärfentiefe und eine große Tiefenwirkung entsteht.
 		
-		Die zweite Kamera ist eine Kompaktkamera von Fujifilm und eignet sich im Speziellen für die 3D-Fotografie. Dabei handelt es sich um eine Fujifilm Finepix Real 3D mit zwei Objektiven und entsprechend 2 Sensoren. Sie löst mit 10 Megapixel auf und deckt einen Brennweitenbereich von 35mm bis 105mm ab. Aufgrund dieser Hardware, können beide benötigten Fotosauf einmal geschossen werden. Die Kamera speichert die Einzelaufnahmen als JPG und als Multi Picture Object (MPO) ab. Abgesehen von dieser Funktion, ist die Kompaktkamera einer Spiegelreflexkamera mit guten Objektive stark unterlegen. Besonders störend wirkt sich dabei aus, dass die maximale Dauer einer Langzeitbelichtung nur eine halbe Sekunde beträgt. Soll ein Foto aus einem dunklen Setting normal belichtet sein, muss zwangsweise die ISO angehoben und die Blende geöffnet werden. Auch ist die Menüführung nicht intuitiv, sodass gesuchte Einstellmöglichkeiten umständlich in Untermenüs versteckt sind.
+		Die zweite Kamera ist eine Kompaktkamera von Fujifilm und eignet sich im Speziellen für die 3D-Fotografie. Dabei handelt es sich um eine Fujifilm Finepix Real 3D mit zwei Objektiven und entsprechend 2 Sensoren. Sie löst mit 10 Megapixel auf und deckt einen Brennweitenbereich von 35mm bis 105mm ab. Aufgrund dieser Hardware, können beide benötigten Fotos auf zugleich geschossen werden. Die Kamera speichert die Einzelaufnahmen als JPG und als Multi Picture Object (MPO) ab. Abgesehen von dieser Funktion, ist die Kompaktkamera einer Spiegelreflexkamera mit guten Objektive stark unterlegen. Besonders störend wirkt sich dabei aus, dass die maximale Dauer einer Langzeitbelichtung nur eine halbe Sekunde beträgt. Soll ein Foto aus einem dunklen Setting normal belichtet sein, muss zwangsweise die ISO angehoben und die Blende geöffnet werden. Auch ist die Menüführung nicht intuitiv, sodass gesuchte Einstellmöglichkeiten umständlich in Untermenüs versteckt sind.
 		
 		
 
 	\chapter{Nachbearbeitung und Entwicklung}
-
+		Die Fotos der digitalen Spiegelreflexkamera (DSLR) liegen jeweils in 2 Formaten vor. Als JPG und RAW. Aufgrund dessen werden die Raw-Dateien vor der eigentlichen Zusammenstellung in ein Fotobearbeitungsprogramm, wie z. B. Lightroom, geladen. Dort erfolgt die Optimierung beider Bilder mit, wobei darauf geachtet wird, dass beide auf dieselbe Weise anzupassen sind. Zu den Bearbeitungsschritten zählt ua. das Anheben der Schatten, um z. B. die Goethe-Statue vor der Börse herauszuarbeiten. Anschließend erfolgt das Speichern der bearbeiteten Bilder als JPG und der Import dieser in das Programm \textit{StereoPhoto Maker}.
+		\newpage
+		Die Abbildung \ref{img:maker_import} veranschaulicht die Import-Möglichkeiten dieser Software. Für das Öffnen der MPO-Dateien, kann man direkt auf \grqq{}Stereobild öffnen...\grqq{} klicken. Die mit der DSLR aufgenommenen Fotos hingegen werden über \grqq{}Linkes/Rechtes Bild öffnen...\grqq{} importiert.
 		\begin{figure}[H]
 			\includegraphics[width=\linewidth]{img/steps/step1.png}
 			\caption{StereoPhoto Maker - Import}
 			\label{img:maker_import}
 		\end{figure}
-		
+	
+		Nach dem Import der Bilder, werden beide Fotos Seite an Seite angezeigt. In der Benutzeroberfläche kommen zusätzliche Bearbeitungsbuttons hinzu. Die wichtigsten zeigt die Abbildung \ref{img:maker_options}. So ist es möglich über den blau markierten Button eine erste 3D-Vorschau zu erzeugen. Dort sind viele Optionen für die 3D-Darstellung vorhanden, wie z. B. die Technik für Shutterbrillen oder auch ältere, wie die Grau- und Farb-Anaglyphentechnik. Sollten beide Fotos vertauscht sein, ist eine Korrektur über den grün gekennzeichneten Knopf möglich.
+				
 		\begin{figure}[H]
 			\includegraphics[width=\linewidth]{img/steps/step2.png}
 			\caption{StereoPhoto Maker - Darstellung und Optionen}
 			\label{img:maker_options}
 		\end{figure}
+
+		Zuletzt erfolgt eine Feinjustage der Einzelbilder. Dies kann automatisch geschehen oder auch manuell gesteuert werden. Die rote Markierung zeigt die Position beider Möglichkeiten in der GUI. Bei der Justage werden beide Bilder im richtigen Winkel zueinander gedreht und die Abstände der Fotos angepasst. Dabei geht hervor, dass die Autojustage extrem gut funktioniert, wenn beide Fotos mit einem Stativ geschossen wurden. Dies geht aus dem Justage-Dialog (Abb. \ref{img:maker_justage}) hervor, anhand dessen die Bilder nur sehr geringfügig justiert werden müssen.
 		
 		\begin{figure}[H]
 			\includegraphics[width=\linewidth]{img/steps/step3.png}
@@ -223,11 +229,15 @@
 			\label{img:maker_justage}
 		\end{figure}
 		
+		Sollte die Autojustage kein zufriedenstellendes Ergebnis liefern, hat der Nutzer die Möglichkeit, dies manuell zu tun. Wie in der Abbildung \ref{img:maker_manual} zu sehen ist, kann auf die vertikale und horizontale Verschiebung über die orange bzw. rot markierten Slider Einfluss genommen werden. In der grünen Box besteht die Möglichkeit den Drehwinkel anzupassen. Alle Änderungen erwirken ein Updaten der Vorschau und somit das Darstellen der aktuellen Einstellungen.
+		
 		\begin{figure}[H]
 			\includegraphics[width=\linewidth]{img/steps/step4.png}
 			\caption{StereoPhoto Maker - Manuelle Bildjustage}
 			\label{img:maker_manual}
 		\end{figure}
+	
+		Nach der Justage kann das Foto in gängigen Fotoformaten exportiert werden. Da zum Betrachten eine rot-cyan Brille zum Einsatz kommt, sind die Fotos mit der rot-cyan Grau-Anaglyphentechnik erstellt worden.
 
 	
 \end{document}
